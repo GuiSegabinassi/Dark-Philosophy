@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Philosophy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Georgia&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Dark Philosophy</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#content">Philosophers</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <h2>Exploring the Depths of Philosophical Thought</h2>
+            <p>Delve into the profound ideas and teachings of history's greatest minds.</p>
+            <div class="cta-buttons">
+                
+            </div>
+        </section>
+        <section id="content" class="content">
+            <div class="card" onclick="showDetails('socrates', this)">
+                <img src="./img/socrates.webp" alt="Socrates">
+                <h3>Socrates</h3>
+                <p>Classical Greek philosopher credited as one of the founders of Western philosophy.</p>
+                <div class="details">
+                    <p>Classical Greek philosopher credited as one of the founders of Western philosophy. He is an enigmatic figure known for his method of questioning and dialogue, known as the Socratic method.</p>
+                    <h4>Major Works</h4>
+                    <ul>
+                        <li>Apology</li>
+                        <li>Crito</li>
+                        <li>Phaedo</li>
+                    </ul>
+                    <h4>Famous Quotes</h4>
+                    <ul>
+                        <li>An unexamined life is not worth living.</li>
+                        <li>I know that I know nothing.</li>
+                    </ul>
+                    <button onclick="hideDetails(event)">Close</button>
+                </div>
+            </div>
+            <div class="card" onclick="showDetails('plato', this)">
+                <img src="./img/platao.webp" alt="Plato">
+                <h3>Plato</h3>
+                <p>A student of Socrates and a teacher of Aristotle, Plato founded the Academy in Athens.</p>
+                <div class="details">
+                    <p>A student of Socrates and a teacher of Aristotle, Plato founded the Academy in Athens. He wrote philosophical dialogues and is known for his works on ethics, politics, and metaphysics.</p>
+                    <h4>Major Works</h4>
+                    <ul>
+                        <li>The Republic</li>
+                        <li>Phaedrus</li>
+                        <li>Symposium</li>
+                    </ul>
+                    <h4>Famous Quotes</h4>
+                    <ul>
+                        <li>Wise men speak because they have something to say; fools because they have to say something.</li>
+                        <li>The greatest wealth is to live content with little.</li>
+                    </ul>
+                    <button onclick="hideDetails(event)">Close</button>
+                </div>
+            </div>
+            <div class="card" onclick="showDetails('nietzsche', this)">
+                <img src="./img/nietche.webp" alt="Friedrich Nietzsche">
+                <h3>Friedrich Nietzsche</h3>
+                <p>German philosopher known for his critical texts on religion, morality, and culture.</p>
+                <div class="details">
+                    <p>German philosopher known for his critical texts on religion, morality, and culture. He introduced concepts such as the will to power, the eternal return, and the Übermensch.</p>
+                    <h4>Major Works</h4>
+                    <ul>
+                        <li>Thus Spoke Zarathustra</li>
+                        <li>Beyond Good and Evil</li>
+                        <li>The Antichrist</li>
+                    </ul>
+                    <h4>Famous Quotes</h4>
+                    <ul>
+                        <li>That which does not kill us makes us stronger.</li>
+                        <li>He who has a why to live can bear almost any how.</li>
+                    </ul>
+                    <button onclick="hideDetails(event)">Close</button>
+                </div>
+            </div>
+            <div class="card" onclick="showDetails('schopenhauer', this)">
+                <img src="./img/schopenhauer.webp" alt="Arthur Schopenhauer">
+                <h3>Arthur Schopenhauer</h3>
+                <p>German philosopher best known for his book, "The World as Will and Representation".</p>
+                <div class="details">
+                    <p>German philosopher best known for his book, "The World as Will and Representation". His work influenced existentialism and psychoanalysis.</p>
+                    <h4>Major Works</h4>
+                    <ul>
+                        <li>The World as Will and Representation</li>
+                        <li>On the Fourfold Root of the Principle of Sufficient Reason</li>
+                        <li>Parerga and Paralipomena</li>
+                    </ul>
+                    <h4>Famous Quotes</h4>
+                    <ul>
+                        <li>The world is my representation.</li>
+                        <li>Compassion is the basis of morality.</li>
+                    </ul>
+                    <button onclick="hideDetails(event)">Close</button>
+                </div>
+            </div>
+            <div class="card" onclick="showDetails('sartre', this)">
+                <img src="./img/sartre.webp" alt="Jean-Paul Sartre">
+                <h3>Jean-Paul Sartre</h3>
+                <p>French existentialist philosopher, playwright, novelist, and literary critic.</p>
+                <div class="details">
+                    <p>French existentialist philosopher, playwright, novelist, and literary critic. He is known for his works on existentialism and phenomenology.</p>
+                    <h4>Major Works</h4>
+                    <ul>
+                        <li>Being and Nothingness</li>
+                        <li>No Exit</li>
+                        <li>Nausea</li>
+                    </ul>
+                    <h4>Famous Quotes</h4>
+                    <ul>
+                        <li>Existence precedes essence.</li>
+                        <li>Man is condemned to be free.</li>
+                    </ul>
+                    <button onclick="hideDetails(event)">Close</button>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>About Philosophy</h2>
+            <p>Philosophy is the study of general and fundamental questions about existence, knowledge, values, reason, mind, and language. It is distinguished from other ways of addressing such questions by its critical, generally systematic approach and its reliance on rational argument. Philosophy has been divided into many sub-fields, including metaphysics, epistemology, ethics, logic, and aesthetics.</p>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 Guilherme Segabinassi. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
